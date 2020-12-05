@@ -14,6 +14,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #000000;
+  background-color: #463C6D;
 }
 
 a {
@@ -56,5 +57,21 @@ textarea, input {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
+}
+
+.header {
+  padding: 25px 0;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
