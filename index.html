@@ -1,3 +1,6 @@
+<!-- Курсовой проект -->
+<!-- Студент группы 493, Цимбалист Иван Олегович. 2020 год -->
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -28,7 +31,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Калькулятор</title>
+    <title>Калькулятор стоимости верстки</title>
 </head>
 <body>
     <div class="wrapper">
@@ -74,7 +77,7 @@
                             <li class="hero-text__list-item">Создание сайтов «под ключ»</li>
                             <li class="hero-text__list-item">Опыт работы 3 года</li>
                             <li class="hero-text__list-item">Соблюдение сроков</li>
-                            <li class="hero-text__list-item">Верстка кроссбраузерных сайтов на чистом, валидном HTML и CSS</li>
+                            <li class="hero-text__list-item">Верстка сайтов на чистом, валидном HTML и CSS</li>
                         </ul>
                         <div class="hero-text__btn btn">
                             <span>Расчет стоимости</span>
@@ -83,6 +86,43 @@
                     <div class="hero-img">
                         <img src="./img/hero/hero.svg" alt="developer" class="hero-img__content">
                     </div>
+                </div>
+            </section>
+            <section class="calc active">
+                <div class="calc-container container">
+                    <form action="#" class="calc-main">
+                        <div class="calc-text">
+                            Расскажите больше о сайте, который вам нужен, чтобы рассчитать примерную стоимость разработки. Если нужна помощь — напишите мне на почту, или в телеграм, или позвоните по телефону.
+                        </div>
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Какой сайт вам нужен?</div>
+                            <label for="landing" class="calc-label">
+                                <input class="calc-radio calc-handler" id="landing" type="radio" name="whichSite" value="landing" checked data-site="одностраничный сайт">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Одностраничный (лендинг)</div>
+                            </label>
+                            <label for="multiPage" class="calc-label">
+                                <input class="calc-radio calc-handler" id="multiPage" type="radio" name="whichSite" value="multiPage" data-site="корпоративный">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Многостраничный (корпоративный)</div>
+                            </label>
+                            <label for="onlineStore" class="calc-label">
+                                <input class="calc-radio calc-handler" id="onlineStore" type="radio" name="whichSite" value="onlineStore" data-site="интернет-магазин">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Интернет-магазин</div>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Нужно ли разрабатывать дизайн сайта?</div>
+                            <label for="landing" class="calc-label calc-switch">
+                                <input class="calc-radio calc-handler" id="landing" type="radio" name="whichSite" value="landing" checked data-site="одностраничный сайт">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Нет</div>
+                            </label>
+                        </fieldset>
+
+                    </form>
                 </div>
             </section>
         </div>
