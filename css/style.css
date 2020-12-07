@@ -59,6 +59,14 @@ textarea, input {
   border-radius: 0;
 }
 
+.btn {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 12px 40px;
+  border: 2px solid #ffffff;
+  font-weight: 700;
+}
+
 .header {
   padding: 25px 0;
 }
@@ -73,5 +81,57 @@ textarea, input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-contacts__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+
+.header-contacts__socials-item {
+  margin-right: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.header-contacts__socials-item:last-child {
+  margin-right: 0;
+}
+
+.header-contacts__socials-item__img {
+  width: 30px;
+}
+
+.header-contacts__phone {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.header-logo {
+  width: 300px;
+}
+
+.hero {
+  padding-top: 50px;
+}
+
+.hero-text {
+  padding-top: 45px;
 }
 /*# sourceMappingURL=style.css.map */
