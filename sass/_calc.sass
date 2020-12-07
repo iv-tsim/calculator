@@ -43,7 +43,20 @@
         .calc-radio:checked + .calc-item__dec::after
             opacity: 1
             visibility: visible
-    &-radio
+        .calc-checkbox:checked + .calc-item__dec::after
+            left: calc(100% - 13px)
+    &-switch
+        .calc-item__dec
+            min-width: 32px
+            border-radius: 10px
+            &::after
+                top: 50%
+                left: 3px
+                transform: translate(0, -50%)
+                opacity: 1
+                visibility: visible
+                transition: .3s left ease-in-out
+    &-radio, &-checkbox
         position: absolute
         opacity: 0
         z-index: -1

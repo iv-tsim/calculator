@@ -115,10 +115,56 @@
 
                         <fieldset class="calc-item">
                             <div class="calc-item__title">Нужно ли разрабатывать дизайн сайта?</div>
-                            <label for="landing" class="calc-label calc-switch">
-                                <input class="calc-radio calc-handler" id="landing" type="radio" name="whichSite" value="landing" checked data-site="одностраничный сайт">
+                            <label class="calc-label calc-switch">
+                                <input class="calc-checkbox calc-handler" id="desktopTemplates" type="checkbox" name="option" value="desktopTemplates">
                                 <div class="calc-item__dec"></div>
                                 <div class="calc-item__text">Нет</div>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Адаптировать сайт под смартфоны и планшеты?</div>
+                            <label class="calc-label calc-switch">
+                                <input class="calc-checkbox calc-handler" id="adapt" type="checkbox" name="option" value="adapt">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Нет</div>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Нужно ли разрабатывать дизайн сайта под мобильные устройства?</div>
+                            <label class="calc-label calc-switch">
+                                <input class="calc-checkbox calc-handler" id="mobileTemplates" type="checkbox" name="option" value="mobileTemplates">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Нет</div>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Вы хотите самостоятельно менять и добавлять текст, картинки на сайте без помощи разработчика?</div>
+                            <label class="calc-label calc-switch">
+                                <input class="calc-checkbox calc-handler" id="editable" type="checkbox" name="option" value="editable">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Нет</div>
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Дополнительный функционал для сайта</div>
+                            <label class="calc-label calc-switch" for="metrikaYandex">
+                                <input class="calc-checkbox calc-handler" id="metrikaYandex" type="checkbox" name="option" value="metrikaYandex">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Яндекс Метрика</div>
+                            </label>
+                            <label class="calc-label calc-switch" for="analyticsGoogle">
+                                <input class="calc-checkbox calc-handler" id="analyticsGoogle" type="checkbox" name="option" value="analyticsGoogle">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Гугл Аналитика</div>
+                            </label>
+                            <label class="calc-label calc-switch" for="sendOrder">
+                                <input class="calc-checkbox calc-handler" id="sendOrder" type="checkbox" name="option" value="sendOrder">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Отправка заявок на почту</div>
                             </label>
                         </fieldset>
 

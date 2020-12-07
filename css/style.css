@@ -317,7 +317,27 @@ textarea, input {
   visibility: visible;
 }
 
-.calc-radio {
+.calc-label .calc-checkbox:checked + .calc-item__dec::after {
+  left: calc(100% - 13px);
+}
+
+.calc-switch .calc-item__dec {
+  min-width: 32px;
+  border-radius: 10px;
+}
+
+.calc-switch .calc-item__dec::after {
+  top: 50%;
+  left: 3px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .3s left ease-in-out;
+  transition: .3s left ease-in-out;
+}
+
+.calc-radio, .calc-checkbox {
   position: absolute;
   opacity: 0;
   z-index: -1;
