@@ -69,7 +69,7 @@
                     </div>
                 </div>
             </header>
-            <section class="hero">
+            <section class="hero active">
                 <div class="hero-container container">
                     <div class="hero-text">
                         <h1 class="hero-text__title">Привет, я Иван Цимбалист Front-end разработчик</h1>
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </section>
-            <section class="calc active">
+            <section class="calc">
                 <div class="calc-container container">
                     <form action="#" class="calc-main">
                         <div class="calc-text">
@@ -118,7 +118,7 @@
                             <label class="calc-label calc-switch">
                                 <input class="calc-checkbox calc-handler" id="desktopTemplates" type="checkbox" name="option" value="desktopTemplates">
                                 <div class="calc-item__dec"></div>
-                                <div class="calc-item__text">Нет</div>
+                                <div class="calc-item__text desktopTemplates_value">Нет</div>
                             </label>
                         </fieldset>
 
@@ -127,7 +127,7 @@
                             <label class="calc-label calc-switch">
                                 <input class="calc-checkbox calc-handler" id="adapt" type="checkbox" name="option" value="adapt">
                                 <div class="calc-item__dec"></div>
-                                <div class="calc-item__text">Нет</div>
+                                <div class="calc-item__text adapt_value">Нет</div>
                             </label>
                         </fieldset>
 
@@ -136,7 +136,7 @@
                             <label class="calc-label calc-switch">
                                 <input class="calc-checkbox calc-handler" id="mobileTemplates" type="checkbox" name="option" value="mobileTemplates">
                                 <div class="calc-item__dec"></div>
-                                <div class="calc-item__text">Нет</div>
+                                <div class="calc-item__text mobileTemplates_value">Нет</div>
                             </label>
                         </fieldset>
 
@@ -145,7 +145,7 @@
                             <label class="calc-label calc-switch">
                                 <input class="calc-checkbox calc-handler" id="editable" type="checkbox" name="option" value="editable">
                                 <div class="calc-item__dec"></div>
-                                <div class="calc-item__text">Нет</div>
+                                <div class="calc-item__text editable_value">Нет</div>
                             </label>
                         </fieldset>
 
@@ -168,6 +168,43 @@
                             </label>
                         </fieldset>
 
+                        <fieldset class="calc-item">
+                            <div class="calc-item__title">Время на разработку сайту</div>
+        
+                            <p class="fast-description">
+                                Разрабатываю <span class="type-site">одностраничный сайт</span> от <span class="max-deadline">7 дней</span>. Если вам нужно сделать сайт быстрее, поставьте галочку ниже и выберите подходящие сроки.
+                            </p>
+
+                            <label class="calc-label calc-switch">
+                                <input class="calc-checkbox want-faster" type="checkbox">
+                                <div class="calc-item__dec"></div>
+                                <div class="calc-item__text">Хочу быстрее</div>
+                            </label>
+        
+                            <p class="fast-range">
+                                <input type="range" class="fast-deadline range-deadline calc-handler" min="6" max="14" step="1" value="14" name="deadline">
+                                <span class="deadline">
+                                    <span class="deadline-value">14 дней</span>*
+                                </span>
+                                <small class="deadline-small">*точные сроки определяются при обсужении технического задания</small>
+                            </p>
+                        </fieldset>
+
+                        <fieldset class="calc-item subtotal">
+                            <h2>Примерная стоимость разработки сайта</h2>
+                            <p class="calc-description"></p>
+                            <p class="calc-description">
+                                Напишите мне на почту, или в телеграм, или позвоните по телефону.
+                            </p>
+                            <div class="calc-total">
+                                <span class="calc-total__content">1000</span>
+                                ₽
+                            </div>
+        
+                            <a class="calc-btn btn">
+                                <span>Скачать описание и стоимость разработки сайта</span>
+                            </a>
+                        </fieldset>
                     </form>
                 </div>
             </section>
@@ -181,5 +218,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="./js/main.js"></script>
+
 </body>
 </html>
